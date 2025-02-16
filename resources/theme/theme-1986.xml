@@ -7,13 +7,19 @@
     <option name="BLOCK_TERMINAL_DEFAULT_BACKGROUND" value="070825" />
     <option name="BLOCK_TERMINAL_DEFAULT_FOREGROUND" value="f1f1f1" />
     <option name="BLOCK_TERMINAL_ERROR_BLOCK_STROKE_COLOR" value="FF16B0" />
-    <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_BACKGROUND" value="0d0f31" />
+    <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_BACKGROUND" value="3B4D66" />
     <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_STROKE_COLOR" value="3B4D66" />
-    <option name="BLOCK_TERMINAL_PROMPT_SEPARATOR_COLOR" value="0d0f31" />
-    <option name="BLOCK_TERMINAL_SELECTED_BLOCK_BACKGROUND" value="0d0f31" />
+    <option name="BLOCK_TERMINAL_PROMPT_SEPARATOR_COLOR" value="3B4D66" />
+    <option name="BLOCK_TERMINAL_SELECTED_BLOCK_BACKGROUND" value="3B4D66" />
     <option name="BLOCK_TERMINAL_SELECTED_BLOCK_STROKE_COLOR" value="46BDFF" />
-    <option name="CARET_COLOR" value="ff7edb"/>
-    <option name="CARET_ROW_COLOR" value="0d0f31"/>
+     <!-- Cursor Color -->
+    <option name="CARET_COLOR" value="ff7edb" />
+    <!-- Cursor in a selected block -->
+    <option name="CARET_SELECTION_COLOR" value="FF16B0" />
+    <!-- Cursor in a read-only editor -->
+    <option name="CARET_DISABLED_COLOR" value="FF16B0" />
+    <!-- Caret row highlight (the line where the cursor is) -->
+    <option name="CARET_ROW_COLOR" value="3B4D66" />
     <option name="CONSOLE_BACKGROUND_KEY" value="070825"/>
     <option name="DELETED_LINES_COLOR" value="FF16B0"/>
     <option name="DIFF_SEPARATORS_BACKGROUND" value="3B4D66"/>
@@ -22,9 +28,9 @@
     <option name="ERROR_HINT" value="781732"/> <!-- Can't figure out how to edit foreground colour so stock red honestly looks better for all dark flavours -->
     <option name="FILESTATUS_ADDED" value="B3F361"/>
     <option name="FILESTATUS_COPIED" value="B3F361"/>
-    <option name="FILESTATUS_DELETED" value="070825"/>
+    <option name="FILESTATUS_DELETED" value="3B4D66"/>
     <option name="FILESTATUS_HIJACKED" value="fcee54"/>
-    <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="070825"/>
+    <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="3B4D66"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="3B4D66"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="B3F361"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="B3F361"/>
@@ -49,46 +55,46 @@
     <option name="HTML_TAG_TREE_LEVEL3" value="46BDFF"/>
     <option name="HTML_TAG_TREE_LEVEL4" value="46BDFF"/>
     <option name="HTML_TAG_TREE_LEVEL5" value="B3F361"/>
-    <option name="INDENT_GUIDE" value="0d0f31"/>
-    <option name="INFORMATION_HINT" value="0d0f31"/>
+    <option name="INDENT_GUIDE" value="3B4D66"/>
+    <option name="INFORMATION_HINT" value="3B4D66"/>
     <option name="INLINE_REFACTORING_SETTINGS_DEFAULT" value="surface1"/>
     <option name="INLINE_REFACTORING_SETTINGS_FOCUSED" value="surface2"/>
     <option name="INLINE_REFACTORING_SETTINGS_HOVERED" value="surface2"/>
     <option name="LINE_NUMBERS_COLOR" value="3B4D66"/>
     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="f1f1f1"/>
-    <option name="LOOKUP_COLOR" value="0d0f31"/>
-    <option name="METHOD_SEPARATORS_COLOR" value="0d0f31"/>
+    <option name="LOOKUP_COLOR" value="3B4D66"/>
+    <option name="METHOD_SEPARATORS_COLOR" value="3B4D66"/>
     <option name="MODIFIED_LINES_COLOR" value="B3F361"/>
     <option name="MODIFIED_TAB_ICON" value="46BDFF"/>
     <option name="NOTIFICATION_BACKGROUND" value="f1f1f1"/>
-    <option name="PROMOTION_PANE" value="0d0f31"/>
-    <option name="QUESTION_HINT" value="0d0f31"/>
-    <option name="RECENT_LOCATIONS_SELECTION" value="0d0f31"/>
-    <option name="RIGHT_MARGIN_COLOR" value="0d0f31"/>
-    <option name="SELECTED_INDENT_GUIDE" value="0d0f31"/>
-    <option name="SELECTED_TEARLINE_COLOR" value="0d0f31"/>
-    <option name="SELECTION_BACKGROUND" value="070825"/>
-    <option name="SELECTION_FOREGROUND" value=""/>
+    <option name="PROMOTION_PANE" value="3B4D66"/>
+    <option name="QUESTION_HINT" value="3B4D66"/>
+    <option name="RECENT_LOCATIONS_SELECTION" value="3B4D66"/>
+    <option name="RIGHT_MARGIN_COLOR" value="3B4D66"/>
+    <option name="SELECTED_INDENT_GUIDE" value="3B4D66"/>
+    <option name="SELECTED_TEARLINE_COLOR" value="3B4D66"/>
+    <option name="SELECTION_BACKGROUND" value="3B4D66"/>
+    <option name="SELECTION_FOREGROUND" value="ff7edb"/>
     <option name="SEPARATOR_BELOW_COLOR" value=""/>
-    <option name="ScrollBar.thumbColor" value="0d0f31"/>
-    <option name="ScrollBar.thumbBorderColor" value="0d0f31"/>
-    <option name="ScrollBar.hoverThumbColor" value="0d0f31"/>
-    <option name="ScrollBar.hoverThumbBorderColor" value="0d0f31"/>
-    <option name="ScrollBar.Mac.thumbColor" value="0d0f31"/>
-    <option name="ScrollBar.Mac.thumbBorderColor" value="0d0f31"/>
-    <option name="ScrollBar.Mac.hoverThumbColor" value="0d0f31"/>
-    <option name="ScrollBar.Mac.hoverThumbBorderColor" value="0d0f31"/>
+    <option name="ScrollBar.thumbColor" value="3B4D66"/>
+    <option name="ScrollBar.thumbBorderColor" value="3B4D66"/>
+    <option name="ScrollBar.hoverThumbColor" value="3B4D66"/>
+    <option name="ScrollBar.hoverThumbBorderColor" value="3B4D66"/>
+    <option name="ScrollBar.Mac.thumbColor" value="3B4D66"/>
+    <option name="ScrollBar.Mac.thumbBorderColor" value="3B4D66"/>
+    <option name="ScrollBar.Mac.hoverThumbColor" value="3B4D66"/>
+    <option name="ScrollBar.Mac.hoverThumbBorderColor" value="3B4D66"/>
     <option name="TAB_UNDERLINE" value="B3F361"/>
     <option name="TAB_UNDERLINE_INACTIVE" value="f1f1f1"/>
-    <option name="TEARLINE_COLOR" value="0d0f31"/>
+    <option name="TEARLINE_COLOR" value="3B4D66"/>
     <option name="VCS_ANNOTATIONS_COLOR_1" value="B3F361"/>
     <option name="VCS_ANNOTATIONS_COLOR_2" value="FF16B0"/>
     <option name="VCS_ANNOTATIONS_COLOR_3" value="B3F361"/>
     <option name="VCS_ANNOTATIONS_COLOR_4" value="46BDFF"/>
     <option name="VCS_ANNOTATIONS_COLOR_5" value="46BDFF"/>
-    <option name="VISUAL_INDENT_GUIDE" value="0d0f31"/>
+    <option name="VISUAL_INDENT_GUIDE" value="3B4D66"/>
     <option name="WHITESPACES" value="f1f1f1"/>
-    <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="070825"/>
+    <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="3B4D66"/>
   </colors>
   <attributes>
     <option name="ABSTRACT_METHOD_ATTRIBUTES">
@@ -183,8 +189,8 @@
     </option>
     <option name="BLOCK_TERMINAL_BLACK" >
       <value>
-        <option name="FOREGROUND" value="0d0f31"/>
-        <option name="BACKGROUND" value="0d0f31"/>
+        <option name="FOREGROUND" value="3B4D66"/>
+        <option name="BACKGROUND" value="3B4D66"/>
       </value>
     </option>
     <option name="BLOCK_TERMINAL_BLUE" >
@@ -232,8 +238,8 @@
 
     <option name="BLOCK_TERMINAL_BLACK_BRIGHT" >
       <value>
-        <option name="FOREGROUND" value="070825"/>
-        <option name="BACKGROUND" value="070825"/>
+        <option name="FOREGROUND" value="3B4D66"/>
+        <option name="BACKGROUND" value="3B4D66"/>
       </value>
     </option>
     <option name="BLOCK_TERMINAL_BLUE_BRIGHT" >
@@ -284,7 +290,7 @@
     <option name="BREADCRUMBS_CURRENT">
       <value>
         <option name="FOREGROUND" value="f1f1f1"/>
-        <option name="BACKGROUND" value="0d0f31"/>
+        <option name="BACKGROUND" value="3B4D66"/>
       </value>
     </option>
     <option name="BREADCRUMBS_DEFAULT">
@@ -295,7 +301,7 @@
     <option name="BREADCRUMBS_HOVERED">
       <value>
         <option name="FOREGROUND" value="f1f1f1"/>
-        <option name="BACKGROUND" value="070825"/>
+        <option name="BACKGROUND" value="3B4D66"/>
       </value>
     </option>
     <option name="BREADCRUMBS_INACTIVE">
@@ -334,7 +340,7 @@
     </option>
     <option name="CODE_LENS_BORDER_COLOR">
       <value>
-        <option name="BACKGROUND" value="0d0f31"/>
+        <option name="BACKGROUND" value="3B4D66"/>
         <option name="EFFECT_COLOR" value="ff7edb"/>
       </value>
     </option>
@@ -346,7 +352,7 @@
     </option>
     <option name="CONDITIONALLY_NOT_COMPILED">
       <value>
-        <option name="FOREGROUND" value="070825"/>
+        <option name="FOREGROUND" value="3B4D66"/>
         
       </value>
     </option>
@@ -354,7 +360,7 @@
     <!-- ANSI Color 00 -->
     <option name="CONSOLE_BLACK_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="0d0f31"/>
+        <option name="FOREGROUND" value="3B4D66"/>
       </value>
     </option>
     <!-- ANSI Color 01 -->
@@ -402,7 +408,7 @@
     <!-- ANSI Color 08 -->
     <option name="CONSOLE_DARKGRAY_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="070825"/>
+        <option name="FOREGROUND" value="3B4D66"/>
       </value>
     </option>
     <!-- ANSI Color 09 -->
@@ -741,18 +747,18 @@
     </option>
     <option name="DART_UNRESOLVED_INSTANCE_MEMBER_REFERENCE">
       <value>
-        <option name="FOREGROUND" value="070825"/>
+        <option name="FOREGROUND" value="3B4D66"/>
       </value>
     </option>
     <option name="DEBUGGER_INLINED_VALUES">
       <value>
-        <option name="FOREGROUND" value="070825"/>
+        <option name="FOREGROUND" value="3B4D66"/>
         
       </value>
     </option>
     <option name="DEBUGGER_INLINED_VALUES_EXECUTION_LINE">
       <value>
-        <option name="FOREGROUND" value="070825"/>
+        <option name="FOREGROUND" value="3B4D66"/>
         
       </value>
     </option>
@@ -825,7 +831,7 @@
     </option>
     <option name="DEFAULT_DOC_MARKUP">
       <value>
-        <option name="FOREGROUND" value="070825"/>
+        <option name="FOREGROUND" value="3B4D66"/>
         
       </value>
     </option>
@@ -1017,7 +1023,7 @@
     </option>
     <option name="DUPLICATE_FROM_SERVER">
       <value>
-        <option name="BACKGROUND" value="0d0f31"/>
+        <option name="BACKGROUND" value="3B4D66"/>
       </value>
     </option>
     <option name="EJS_OPEN">
@@ -1086,7 +1092,7 @@
     <option name="FOLDED_TEXT_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="3B4D66"/>
-        <option name="BACKGROUND" value="0d0f31"/>
+        <option name="BACKGROUND" value="3B4D66"/>
         <option name="EFFECT_TYPE" value="2"/>
       </value>
     </option>
@@ -1294,7 +1300,7 @@
     </option>
     <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
-        <option name="EFFECT_COLOR" value="070825"/>
+        <option name="EFFECT_COLOR" value="3B4D66"/>
         <option name="ERROR_STRIPE_COLOR" value="46BDFF"/>
       </value>
     </option>
@@ -1358,13 +1364,13 @@
     </option>
     <option name="INLAY_TEXT_WITHOUT_BACKGROUND">
       <value>
-        <option name="FOREGROUND" value="070825"/>
+        <option name="FOREGROUND" value="3B4D66"/>
       </value>
     </option>
     <option name="INLINE_PARAMETER_HINT">
       <value>
         <option name="FOREGROUND" value="f1f1f1"/>
-        <option name="BACKGROUND" value="0d0f31"/>
+        <option name="BACKGROUND" value="3B4D66"/>
       </value>
     </option>
     <option name="INLINE_PARAMETER_HINT_CURRENT">
@@ -1376,12 +1382,12 @@
     <option name="INLINE_PARAMETER_HINT_HIGHLIGHTED">
       <value>
         <option name="FOREGROUND" value="f1f1f1"/>
-        <option name="BACKGROUND" value="070825"/>
+        <option name="BACKGROUND" value="3B4D66"/>
       </value>
     </option>
     <option name="INLINE_STACK_FRAMES">
       <value>
-        <option name="BACKGROUND" value="0d0f31"/>
+        <option name="BACKGROUND" value="3B4D66"/>
       </value>
     </option>
     <option name="INSTANCE_FIELD_ATTRIBUTES" baseAttributes="DEFAULT_INSTANCE_FIELD"/>
@@ -1572,7 +1578,7 @@
     </option>
     <option name="LIVE_TEMPLATE_INACTIVE_SEGMENT">
       <value>
-        <option name="EFFECT_COLOR" value="0d0f31"/>
+        <option name="EFFECT_COLOR" value="3B4D66"/>
       </value>
     </option>
     <option name="LOCALE.MSGCTXT_KEYWORD">
@@ -1659,7 +1665,7 @@
     </option>
     <option name="LOG_EXPIRED_ENTRY">
       <value>
-        <option name="FOREGROUND" value="0d0f31"/>
+        <option name="FOREGROUND" value="3B4D66"/>
       </value>
     </option>
     <option name="LOG_INFO_OUTPUT">
@@ -1845,7 +1851,7 @@
     </option>
     <option name="MARKDOWN_TABLE_SEPARATOR">
       <value>
-        <option name="FOREGROUND" value="070825"/>
+        <option name="FOREGROUND" value="3B4D66"/>
       </value>
     </option>
     <option name="MARKDOWN_UNORDERED_LIST">
@@ -1904,7 +1910,7 @@
     </option>
     <option name="NOT_TOP_FRAME_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="0d0f31"/>
+        <option name="BACKGROUND" value="3B4D66"/>
       </value>
     </option>
     <option name="NOT_USED_ELEMENT_ATTRIBUTES">
@@ -1919,7 +1925,7 @@
     </option>
     <option name="OC.CONDITIONALLY_NOT_COMPILED">
       <value>
-        <option name="FOREGROUND" value="070825"/>
+        <option name="FOREGROUND" value="3B4D66"/>
       </value>
     </option>
     <option name="OC.CPP_KEYWORD">
@@ -2682,13 +2688,13 @@
     <option name="TAB_SELECTED">
       <value>
         <option name="FOREGROUND" value="B3F361"/>
-        <option name="BACKGROUND" value="0d0f31"/>
+        <option name="BACKGROUND" value="3B4D66"/>
       </value>
     </option>
     <option name="TAB_SELECTED_INACTIVE">
       <value>
         <option name="FOREGROUND" value="B3F361"/>
-        <option name="BACKGROUND" value="0d0f31"/>
+        <option name="BACKGROUND" value="3B4D66"/>
       </value>
     </option>
     <option name="TAG_ATTR_KEY">
@@ -2703,7 +2709,7 @@
     </option>
     <option name="TERMINAL_COMMAND_TO_RUN_USING_IDE">
       <value>
-        <option name="BACKGROUND" value="0d0f31"/>
+        <option name="BACKGROUND" value="3B4D66"/>
       </value>
     </option>
     <option name="TEXT">
@@ -2801,7 +2807,7 @@
     </option>
     <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
-        <option name="EFFECT_COLOR" value="070825"/>
+        <option name="EFFECT_COLOR" value="3B4D66"/>
         <option name="ERROR_STRIPE_COLOR" value="46BDFF"/>
       </value>
     </option>

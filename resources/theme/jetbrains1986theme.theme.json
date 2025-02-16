@@ -21,9 +21,9 @@
     "crust": "#f1f1f1",
     "mantle": "#f1f1f1",
     "base": "#070825",
-    "surface0": "#0d0f31",
-    "surface1": "#0d0f31",
-    "surface2": "#070825",
+    "surface0": "#3B4D66",
+    "surface1": "#3B4D66",
+    "surface2": "#3B4D66",
     "overlay0": "#3B4D66",
     "overlay1": "#f1f1f1",
     "overlay2": "#f1f1f1",
@@ -42,7 +42,8 @@
     "borderColor": "#FF16B0",
     "separatorColor": "#FF16B0",
     "781732": "#781732",
-    "string": "#DF81FC"
+    "string": "#DF81FC",
+    "semiWarning": "#090B24"
   },
   "ui": {
     "*": {
@@ -70,18 +71,11 @@
     "Banner": {
       "errorBackground": "red",
       "errorBorderColor": "red",
-      "errorForeground": "primaryForeground",
-      "informativeBackground": "blue",
-      "informativeBorderColor": "blue",
-      "informativeForeground": "primaryForeground",
       "warningBackground": "peach",
-      "warningBorderColor": "peach",
-      "warningForeground": "primaryForeground"
+      "warningBorderColor": "peach"
     },
     "Bookmark": {
       "Mnemonic": {
-        "iconBackground": "secondaryBackground",
-        "iconBorderColor": "accentColor",
         "iconForeground": "primaryForeground"
       },
       "MnemonicAssigned": {
@@ -145,8 +139,8 @@
       "focusedBorderColor": "selectionBackground",
       "iconColor": "primaryForeground",
       "inactiveErrorFocusColor": "red",
-      "inactiveWarningFocusColor": "yellow",
-      "warningFocusColor": "yellow",
+      "inactiveWarningFocusColor": "semiWarning",
+      "warningFocusColor": "semiWarning",
       "infoForeground": "subtext0"
     },
     "Counter": {
@@ -186,7 +180,7 @@
       "Orange": "peach",
       "Rose": "red",
       "Violet": "lavender",
-      "Yellow": "yellow"
+      "Yellow": "semiWarning"
     },
     "Label": {
       "background": "panelBackground",

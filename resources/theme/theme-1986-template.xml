@@ -12,8 +12,14 @@
     <option name="BLOCK_TERMINAL_PROMPT_SEPARATOR_COLOR" value="{{surface1}}" />
     <option name="BLOCK_TERMINAL_SELECTED_BLOCK_BACKGROUND" value="{{surface0}}" />
     <option name="BLOCK_TERMINAL_SELECTED_BLOCK_STROKE_COLOR" value="{{blue}}" />
-    <option name="CARET_COLOR" value="{{rosewater}}"/>
-    <option name="CARET_ROW_COLOR" value="{{surface1}}"/>
+     <!-- Cursor Color -->
+    <option name="CARET_COLOR" value="{{rosewater}}" />
+    <!-- Cursor in a selected block -->
+    <option name="CARET_SELECTION_COLOR" value="{{maroon}}" />
+    <!-- Cursor in a read-only editor -->
+    <option name="CARET_DISABLED_COLOR" value="{{red}}" />
+    <!-- Caret row highlight (the line where the cursor is) -->
+    <option name="CARET_ROW_COLOR" value="{{surface1}}" />
     <option name="CONSOLE_BACKGROUND_KEY" value="{{base}}"/>
     <option name="DELETED_LINES_COLOR" value="{{maroon}}"/>
     <option name="DIFF_SEPARATORS_BACKGROUND" value="{{overlay0}}"/>
@@ -68,7 +74,7 @@
     <option name="SELECTED_INDENT_GUIDE" value="{{surface1}}"/>
     <option name="SELECTED_TEARLINE_COLOR" value="{{surface1}}"/>
     <option name="SELECTION_BACKGROUND" value="{{surface2}}"/>
-    <option name="SELECTION_FOREGROUND" value=""/>
+    <option name="SELECTION_FOREGROUND" value="{{rosewater}}"/>
     <option name="SEPARATOR_BELOW_COLOR" value=""/>
     <option name="ScrollBar.thumbColor" value="{{surface0}}"/>
     <option name="ScrollBar.thumbBorderColor" value="{{surface0}}"/>
