@@ -1,0 +1,30 @@
+<idea-plugin>
+  <id>bcanzanella.1986-theme</id>
+  <name>1986 Theme</name>
+  <version>1.0</version>
+  <vendor url="https://www.github.com/bcanzanella">bcanzanella</vendor>
+
+  <description>Retro colors. Future coding.</description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
