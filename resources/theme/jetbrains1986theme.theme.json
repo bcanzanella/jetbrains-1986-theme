@@ -163,8 +163,10 @@
       "shortcutForeground": "accentColor"
     },
     "EditorPane": {
+      "inactiveBackground": "primaryBackground",
+      "inactiveForeground": "primaryForeground",
       "background": "primaryBackground",
-      "foreground": "primaryBackground",
+      "foreground": "primaryForeground",
       "splitBorder": "separatorColor"
     },
     "EditorTabs": {
@@ -258,7 +260,8 @@
       }
     },
     "Panel": {
-      "background": "panelBackground"
+      "background": "panelBackground",
+      "foreground": "primaryForeground"
     },
     "PasswordField": {
       "background": "secondaryBackground"
