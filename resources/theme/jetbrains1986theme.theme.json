@@ -6,7 +6,7 @@
   "colors": {
     "mauve": "#B3F361",
     "pink": "#DF81FC",
-    "maroon": "#FF16B0",
+    "maroon": "#FF0066",
     "red": "#FF0066",
     "peach": "#B3F361",
     "yellow": "#fcee54",
@@ -462,6 +462,7 @@
         }
       },
       "GitLog": {
+
         "headIconColor": "secondaryAccentColor",
         "localBranchIconColor": "green",
         "otherIconColor": "teal",
@@ -470,13 +471,14 @@
       },
       "Log": {
         "Commit": {
-          "currentBranchBackground": "mauve",
+          "currentBranchBackground": "primaryBackground",
           "hoveredBackground": "hoverBackground",
           "selectionInactiveBackground": "hoverBackground"
         }
       },
       "RefLabel": {
-        "foreground": "primaryForeground"
+        "foreground": "primaryForeground",
+        "backgroundBase": "primaryBackground"
       }
     },
     "WelcomeScreen": {
@@ -499,12 +501,12 @@
   "icons": {
     "ColorPalette": {
       "Actions.Blue": "#00a6ff",
-      "Actions.Red": "#FF16B0",
+      "Actions.Red": "#FF0066",
       "Actions.Yellow": "#FFEEAD",
       "Actions.Grey": "#b4bac4",
 
       "Objects.Blue": "#5BC0DE",
-      "Objects.Red": "#FF16B0",
+      "Objects.Red": "#FF0066",
       "Objects.Yellow": "#FFEEAD",
       "Objects.Purple": "#b54b92",
       "Objects.Pink": "#FF16B0",
