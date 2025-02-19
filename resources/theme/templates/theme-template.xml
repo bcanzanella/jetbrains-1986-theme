@@ -1,4 +1,4 @@
-<scheme name="1986-theme" version="142" parent_scheme="Default">
+<scheme name="{{name}}" version="142" parent_scheme="{{parent_scheme}}">
   <colors>
     <option name="ADDED_LINES_COLOR" value="{{green}}"/>
     <option name="ANNOTATIONS_COLOR" value="{{text}}"/>
@@ -12,26 +12,27 @@
     <option name="BLOCK_TERMINAL_PROMPT_SEPARATOR_COLOR" value="{{surface1}}" />
     <option name="BLOCK_TERMINAL_SELECTED_BLOCK_BACKGROUND" value="{{surface0}}" />
     <option name="BLOCK_TERMINAL_SELECTED_BLOCK_STROKE_COLOR" value="{{blue}}" />
-     <!-- Cursor Color -->
-    <option name="CARET_COLOR" value="{{rosewater}}" />
+    <option name="CARET_COLOR" value="{{rosewater}}"/>
+    <option name="CARET_ROW_COLOR" value="{{isLatte (opacity surface1 0.15) (opacity surface1 0.2)}}"/>
+ 
     <!-- Cursor in a selected block -->
-    <option name="CARET_SELECTION_COLOR" value="{{maroon}}" />
+    <option name="CARET_SELECTION_COLOR" value="FF16B0" />
     <!-- Cursor in a read-only editor -->
-    <option name="CARET_DISABLED_COLOR" value="{{red}}" />
-    <!-- Caret row highlight (the line where the cursor is) -->
-    <option name="CARET_ROW_COLOR" value="{{surface1}}" />
+    <option name="CARET_DISABLED_COLOR" value="FF16B0" />
+ 
+
     <option name="CONSOLE_BACKGROUND_KEY" value="{{base}}"/>
     <option name="DELETED_LINES_COLOR" value="{{maroon}}"/>
     <option name="DIFF_SEPARATORS_BACKGROUND" value="{{overlay0}}"/>
     <option name="DOCUMENTATION_COLOR" value="{{mantle}}"/>
     <option name="DOC_COMMENT_LINK" value="{{blue}}"/>
-    <option name="ERROR_HINT" value="{{781732}}"/> <!-- Can't figure out how to edit foreground colour so stock red honestly looks better for all dark flavours -->
+    <option name="ERROR_HINT" value="{{isLatte red 781732}}"/> <!-- Can't figure out how to edit foreground colour so stock red honestly looks better for all dark flavours -->
     <option name="FILESTATUS_ADDED" value="{{green}}"/>
     <option name="FILESTATUS_COPIED" value="{{green}}"/>
     <option name="FILESTATUS_DELETED" value="{{surface2}}"/>
     <option name="FILESTATUS_HIJACKED" value="{{yellow}}"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="{{surface2}}"/>
-    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="{{overlay0}}"/>
+    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="{{isLatte overlay2 overlay0}}"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="{{peach}}"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="{{peach}}"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="{{peach}}"/>
@@ -41,11 +42,11 @@
     <option name="FILESTATUS_MODIFIED" value="{{blue}}"/>
     <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="{{blue}}"/>
     <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="{{blue}}"/>
-    <option name="FILESTATUS_SUPPRESSED" value="{{overlay0}}"/>
+    <option name="FILESTATUS_SUPPRESSED" value="{{isLatte overlay2 overlay0}}"/>
     <option name="FILESTATUS_SWITCHED" value="{{lavender}}"/>
-    <option name="FILESTATUS_UNKNOWN" value="peach"/>
+    <option name="FILESTATUS_UNKNOWN" value="{{opacity peach 0.9}}"/>
     <option name="FILESTATUS_addedOutside" value="{{green}}"/>
-    <option name="FILESTATUS_changelistConflict" value="red"/>
+    <option name="FILESTATUS_changelistConflict" value="{{opacity red 0.9}}"/>
     <option name="FILESTATUS_modifiedOutside" value="{{blue}}"/>
     <option name="FOLDED_TEXT_BORDER_COLOR" value=""/>
     <option name="GUTTER_BACKGROUND" value="{{base}}"/>
@@ -57,9 +58,9 @@
     <option name="HTML_TAG_TREE_LEVEL5" value="{{mauve}}"/>
     <option name="INDENT_GUIDE" value="{{surface0}}"/>
     <option name="INFORMATION_HINT" value="{{surface0}}"/>
-    <option name="INLINE_REFACTORING_SETTINGS_DEFAULT" value="surface1"/>
-    <option name="INLINE_REFACTORING_SETTINGS_FOCUSED" value="surface2"/>
-    <option name="INLINE_REFACTORING_SETTINGS_HOVERED" value="surface2"/>
+    <option name="INLINE_REFACTORING_SETTINGS_DEFAULT" value="{{opacity surface1 0.65}}"/>
+    <option name="INLINE_REFACTORING_SETTINGS_FOCUSED" value="{{opacity surface2 0.55}}"/>
+    <option name="INLINE_REFACTORING_SETTINGS_HOVERED" value="{{opacity surface2 0.55}}"/>
     <option name="LINE_NUMBERS_COLOR" value="{{overlay0}}"/>
     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="{{overlay1}}"/>
     <option name="LOOKUP_COLOR" value="{{surface0}}"/>
@@ -73,8 +74,8 @@
     <option name="RIGHT_MARGIN_COLOR" value="{{surface0}}"/>
     <option name="SELECTED_INDENT_GUIDE" value="{{surface1}}"/>
     <option name="SELECTED_TEARLINE_COLOR" value="{{surface1}}"/>
-    <option name="SELECTION_BACKGROUND" value="{{surface2}}"/>
-    <option name="SELECTION_FOREGROUND" value="{{rosewater}}"/>
+    <option name="SELECTION_BACKGROUND" value="{{isLatte (opacity surface2 0.4) (opacity surface2 0.6)}}"/>
+    <option name="SELECTION_FOREGROUND" value=""/>
     <option name="SEPARATOR_BELOW_COLOR" value=""/>
     <option name="ScrollBar.thumbColor" value="{{surface0}}"/>
     <option name="ScrollBar.thumbBorderColor" value="{{surface0}}"/>
@@ -87,11 +88,11 @@
     <option name="TAB_UNDERLINE" value="{{mauve}}"/>
     <option name="TAB_UNDERLINE_INACTIVE" value="{{text}}"/>
     <option name="TEARLINE_COLOR" value="{{surface0}}"/>
-    <option name="VCS_ANNOTATIONS_COLOR_1" value="{{mauve}}"/>
-    <option name="VCS_ANNOTATIONS_COLOR_2" value="{{red}}"/>
-    <option name="VCS_ANNOTATIONS_COLOR_3" value="{{green}}"/>
-    <option name="VCS_ANNOTATIONS_COLOR_4" value="{{sapphire}}"/>
-    <option name="VCS_ANNOTATIONS_COLOR_5" value="{{blue}}"/>
+    <option name="VCS_ANNOTATIONS_COLOR_1" value="{{opacity mauve 0.6}}"/>
+    <option name="VCS_ANNOTATIONS_COLOR_2" value="{{opacity red 0.4}}"/>
+    <option name="VCS_ANNOTATIONS_COLOR_3" value="{{opacity green 0.7}}"/>
+    <option name="VCS_ANNOTATIONS_COLOR_4" value="{{opacity sapphire 0.3}}"/>
+    <option name="VCS_ANNOTATIONS_COLOR_5" value="{{opacity blue 0.6}}"/>
     <option name="VISUAL_INDENT_GUIDE" value="{{surface0}}"/>
     <option name="WHITESPACES" value="{{overlay2}}"/>
     <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="{{surface2}}"/>
@@ -100,7 +101,9 @@
     <option name="ABSTRACT_METHOD_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="{{blue}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="ANGLE_BRACKETS_RAINBOW_COLOR0">
@@ -131,7 +134,9 @@
     <option name="ANNOTATION_ATTRIBUTE_NAME_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="{{maroon}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="ANNOTATION_NAME_ATTRIBUTES" baseAttributes=""/>
@@ -178,19 +183,19 @@
     <option name="BLOCK_TERMINAL_CURRENT_SEARCH_ENTRY">
       <value>
         <option name="FOREGROUND" value="{{text}}" />
-        <option name="BACKGROUND" value="red" />
+        <option name="BACKGROUND" value="{{opacity red 0.3}}" />
       </value>
     </option>
     <option name="BLOCK_TERMINAL_SEARCH_ENTRY">
       <value>
         <option name="FOREGROUND" value="{{text}}" />
-        <option name="BACKGROUND" value="blue" />
+        <option name="BACKGROUND" value="{{opacity blue 0.3}}" />
       </value>
     </option>
     <option name="BLOCK_TERMINAL_BLACK" >
       <value>
-        <option name="FOREGROUND" value="{{surface1}}"/>
-        <option name="BACKGROUND" value="{{surface1}}"/>
+        <option name="FOREGROUND" value="{{isLatte subtext1 surface1}}"/>
+        <option name="BACKGROUND" value="{{isLatte subtext1 surface1}}"/>
       </value>
     </option>
     <option name="BLOCK_TERMINAL_BLUE" >
@@ -225,8 +230,8 @@
     </option>
     <option name="BLOCK_TERMINAL_WHITE" >
       <value>
-        <option name="FOREGROUND" value="{{subtext1}}"/>
-        <option name="BACKGROUND" value="{{subtext1}}"/>
+        <option name="FOREGROUND" value="{{isLatte surface2 subtext1}}"/>
+        <option name="BACKGROUND" value="{{isLatte surface2 subtext1}}"/>
       </value>
     </option>
     <option name="BLOCK_TERMINAL_YELLOW" >
@@ -238,8 +243,8 @@
 
     <option name="BLOCK_TERMINAL_BLACK_BRIGHT" >
       <value>
-        <option name="FOREGROUND" value="{{surface2}}"/>
-        <option name="BACKGROUND" value="{{surface2}}"/>
+        <option name="FOREGROUND" value="{{isLatte subtext0 surface2}}"/>
+        <option name="BACKGROUND" value="{{isLatte subtext0 surface2}}"/>
       </value>
     </option>
     <option name="BLOCK_TERMINAL_BLUE_BRIGHT" >
@@ -274,8 +279,8 @@
     </option>
     <option name="BLOCK_TERMINAL_WHITE_BRIGHT">
       <value>
-        <option name="FOREGROUND" value="{{subtext0}}"/>
-        <option name="BACKGROUND" value="{{subtext0}}"/>
+        <option name="FOREGROUND" value="{{isLatte surface1 subtext0}}"/>
+        <option name="BACKGROUND" value="{{isLatte surface1 subtext0}}"/>
       </value>
     </option>
     <option name="BLOCK_TERMINAL_YELLOW_BRIGHT" >
@@ -347,20 +352,24 @@
     <option name="COFFEESCRIPT.CLASS_NAME">
       <value>
         <option name="FOREGROUND" value="{{peach}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="CONDITIONALLY_NOT_COMPILED">
       <value>
         <option name="FOREGROUND" value="{{surface2}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <!-- Terminal colors -->
     <!-- ANSI Color 00 -->
     <option name="CONSOLE_BLACK_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{surface1}}"/>
+        <option name="FOREGROUND" value="{{isLatte subtext1 surface1}}"/>
       </value>
     </option>
     <!-- ANSI Color 01 -->
@@ -402,13 +411,13 @@
     <!-- ANSI Color 07 -->
     <option name="CONSOLE_GRAY_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{subtext1}}"/>
+        <option name="FOREGROUND" value="{{isLatte surface2 subtext1}}"/>
       </value>
     </option>
     <!-- ANSI Color 08 -->
     <option name="CONSOLE_DARKGRAY_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{surface2}}"/>
+        <option name="FOREGROUND" value="{{isLatte subtext0 surface2}}"/>
       </value>
     </option>
     <!-- ANSI Color 09 -->
@@ -448,6 +457,9 @@
     <option name="CONSOLE_USER_INPUT">
       <value>
         <option name="FOREGROUND" value="{{green}}"/>
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="CONSOLE_WHITE_OUTPUT">
@@ -458,11 +470,17 @@
     <option name="CONSTRUCTOR_CALL_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="{{peach}}"/>
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="CONSTRUCTOR_DECLARATION_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="{{peach}}"/>
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="CSS.BRACKETS">
@@ -479,6 +497,9 @@
     <option name="CSS.FUNCTION">
       <value>
         <option name="FOREGROUND" value="{{sky}}"/>
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="CSS.HASH">
@@ -489,11 +510,17 @@
     <option name="CSS.IMPORTANT">
       <value>
         <option name="FOREGROUND" value="{{lavender}}"/>
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="CSS.KEYWORD">
       <value>
         <option name="FOREGROUND" value="{{red}}"/>
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="CSS.OPERATORS">
@@ -504,6 +531,9 @@
     <option name="CSS.PROPERTY_NAME">
       <value>
         <option name="FOREGROUND" value="{{blue}}"/>
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="CSS.PROPERTY_VALUE">
@@ -524,6 +554,9 @@
     <option name="CSS.URL">
       <value>
         <option name="FOREGROUND" value="{{green}}"/>
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_1">
@@ -582,18 +615,25 @@
     <option name="CUSTOM_KEYWORD2_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="{{peach}}"/>
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="CUSTOM_KEYWORD3_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="{{yellow}}"/>
-    
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="CUSTOM_KEYWORD4_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="{{sky}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="CUSTOM_STRING_ATTRIBUTES" baseAttributes="DEFAULT_STRING"/>
@@ -618,7 +658,9 @@
     <option name="Clojure Literal">
       <value>
         <option name="FOREGROUND" value="{{text}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="Clojure Numbers">
@@ -638,7 +680,7 @@
     </option>
     <option name="CodeWithMe.USER_1_SELECTION">
       <value>
-        <option name="BACKGROUND" value="red"/>
+        <option name="BACKGROUND" value="{{opacity red 0.2}}"/>
       </value>
     </option>
     <option name="CodeWithMe.USER_2_MARKER">
@@ -648,7 +690,7 @@
     </option>
     <option name="CodeWithMe.USER_2_SELECTION">
       <value>
-        <option name="BACKGROUND" value="peach"/>
+        <option name="BACKGROUND" value="{{opacity peach 0.4}}"/>
       </value>
     </option>
     <option name="CodeWithMe.USER_3_MARKER">
@@ -658,7 +700,7 @@
     </option>
     <option name="CodeWithMe.USER_3_SELECTION">
       <value>
-        <option name="BACKGROUND" value="yellow"/>
+        <option name="BACKGROUND" value="{{opacity yellow 0.4}}"/>
       </value>
     </option>
     <option name="CodeWithMe.USER_4_MARKER">
@@ -668,7 +710,7 @@
     </option>
     <option name="CodeWithMe.USER_4_SELECTION">
       <value>
-        <option name="BACKGROUND" value="green"/>
+        <option name="BACKGROUND" value="{{opacity green 0.4}}"/>
       </value>
     </option>
     <option name="CodeWithMe.USER_5_MARKER">
@@ -678,7 +720,7 @@
     </option>
     <option name="CodeWithMe.USER_5_SELECTION">
       <value>
-        <option name="BACKGROUND" value="sapphire"/>
+        <option name="BACKGROUND" value="{{opacity sapphire 0.4}}"/>
       </value>
     </option>
     <option name="CodeWithMe.USER_6_MARKER">
@@ -688,7 +730,7 @@
     </option>
     <option name="CodeWithMe.USER_6_SELECTION">
       <value>
-        <option name="BACKGROUND" value="mauve"/>
+        <option name="BACKGROUND" value="{{opacity mauve 0.4}}"/>
       </value>
     </option>
     <option name="ComposableCallTextAttributes" baseAttributes="DEFAULT_FUNCTION_CALL"/>
@@ -700,7 +742,9 @@
     <option name="DART_CONSTRUCTOR">
       <value>
         <option name="FOREGROUND" value="{{maroon}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DART_ENUM_CONSTANT">
@@ -731,13 +775,17 @@
     <option name="DART_TOP_LEVEL_GETTER_DECLARATION">
       <value>
         <option name="FOREGROUND" value="{{maroon}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DART_TYPE_NAME_DYNAMIC">
       <value>
         <option name="FOREGROUND" value="{{lavender}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DART_TYPE_PARAMETER">
@@ -753,19 +801,25 @@
     <option name="DEBUGGER_INLINED_VALUES">
       <value>
         <option name="FOREGROUND" value="{{surface2}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DEBUGGER_INLINED_VALUES_EXECUTION_LINE">
       <value>
         <option name="FOREGROUND" value="{{surface2}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DEBUGGER_INLINED_VALUES_MODIFIED">
       <value>
         <option name="FOREGROUND" value="{{peach}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DEBUGGER_SMART_STEP_INTO_SELECTION" baseAttributes="LIVE_TEMPLATE_ATTRIBUTES"/>
@@ -778,7 +832,9 @@
     <option name="DEFAULT_BLOCK_COMMENT">
       <value>
         <option name="FOREGROUND" value="{{overlay0}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DEFAULT_BRACES">
@@ -794,7 +850,9 @@
     <option name="DEFAULT_CLASS_NAME">
       <value>
         <option name="FOREGROUND" value="{{yellow}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DEFAULT_CLASS_REFERENCE">
@@ -815,13 +873,17 @@
     <option name="DEFAULT_DOC_COMMENT">
       <value>
         <option name="FOREGROUND" value="{{overlay0}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT_TAG">
       <value>
         <option name="FOREGROUND" value="{{red}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT_TAG_VALUE">
@@ -832,7 +894,9 @@
     <option name="DEFAULT_DOC_MARKUP">
       <value>
         <option name="FOREGROUND" value="{{surface2}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DEFAULT_DOT">
@@ -848,19 +912,25 @@
     <option name="DEFAULT_FUNCTION_CALL">
       <value>
         <option name="FOREGROUND" value="{{blue}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DEFAULT_FUNCTION_DECLARATION">
       <value>
         <option name="FOREGROUND" value="{{blue}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DEFAULT_GLOBAL_VARIABLE">
       <value>
         <option name="FOREGROUND" value="{{maroon}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DEFAULT_IDENTIFIER">
@@ -876,7 +946,9 @@
     <option name="DEFAULT_INTERFACE_NAME">
       <value>
         <option name="FOREGROUND" value="{{yellow}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DEFAULT_INVALID_STRING_ESCAPE">
@@ -899,7 +971,9 @@
     <option name="DEFAULT_LINE_COMMENT">
       <value>
         <option name="FOREGROUND" value="{{overlay0}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DEFAULT_LOCAL_VARIABLE">
@@ -910,7 +984,9 @@
     <option name="DEFAULT_METADATA">
       <value>
         <option name="FOREGROUND" value="{{yellow}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DEFAULT_NUMBER">
@@ -926,7 +1002,9 @@
     <option name="DEFAULT_PARAMETER">
       <value>
         <option name="FOREGROUND" value="{{maroon}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DEFAULT_PARENTHS">
@@ -937,7 +1015,9 @@
     <option name="DEFAULT_PREDEFINED_SYMBOL">
       <value>
         <option name="FOREGROUND" value="{{lavender}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DEFAULT_REASSIGNED_LOCAL_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE"/>
@@ -955,7 +1035,7 @@
     <option name="DEFAULT_STATIC_METHOD" baseAttributes="DEFAULT_FUNCTION_DECLARATION"/>
     <option name="DEFAULT_STRING">
       <value>
-        <option name="FOREGROUND" value="{{string}}"/>
+        <option name="FOREGROUND" value="{{green}}"/>
       </value>
     </option>
     <option name="DEFAULT_TAG">
@@ -987,38 +1067,42 @@
     </option>
     <option name="DIFF_CONFLICT">
       <value>
-        <option name="BACKGROUND" value="red"/>
-        <option name="ERROR_STRIPE_COLOR" value="red"/>
+        <option name="BACKGROUND" value="{{opacity red 0.25}}"/>
+        <option name="ERROR_STRIPE_COLOR" value="{{opacity red 0.2}}"/>
       </value>
     </option>
     <option name="DIFF_DELETED">
       <value>
-        <option name="BACKGROUND" value="red"/>
-        <option name="ERROR_STRIPE_COLOR" value="red"/>
+        <option name="BACKGROUND" value="{{opacity red 0.25}}"/>
+        <option name="ERROR_STRIPE_COLOR" value="{{opacity red 0.2}}"/>
       </value>
     </option>
     <option name="DIFF_INSERTED">
       <value>
-        <option name="BACKGROUND" value="green"/>
-        <option name="ERROR_STRIPE_COLOR" value="green"/>
+        <option name="BACKGROUND" value="{{opacity green 0.25}}"/>
+        <option name="ERROR_STRIPE_COLOR" value="{{opacity green 0.2}}"/>
       </value>
     </option>
     <option name="DIFF_MODIFIED">
       <value>
-        <option name="BACKGROUND" value="blue"/>
-        <option name="ERROR_STRIPE_COLOR" value="blue"/>
+        <option name="BACKGROUND" value="{{opacity blue 0.25}}"/>
+        <option name="ERROR_STRIPE_COLOR" value="{{opacity blue 0.2}}"/>
       </value>
     </option>
     <option name="DJANGO_STRING_LITERAL">
       <value>
         <option name="FOREGROUND" value="{{green}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DJANGO_TAG_NAME">
       <value>
         <option name="FOREGROUND" value="{{blue}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="DUPLICATE_FROM_SERVER">
@@ -1080,13 +1164,15 @@
     </option>
     <option name="EXECUTIONPOINT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="yellow"/>
+        <option name="BACKGROUND" value="{{opacity yellow 0.15}}"/>
       </value>
     </option>
     <option name="FIRST SYMBOL IN LIST">
       <value>
         <option name="FOREGROUND" value="{{text}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="FOLDED_TEXT_ATTRIBUTES">
@@ -1099,7 +1185,9 @@
     <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="{{lavender}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
         <option name="EFFECT_COLOR" value="{{lavender}}"/>
         <option name="EFFECT_TYPE" value="1"/>
       </value>
@@ -1126,7 +1214,9 @@
     <option name="GHERKIN_OUTLINE_PARAMETER_SUBSTITUTION">
       <value>
         <option name="FOREGROUND" value="{{text}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="GHERKIN_PYSTRING">
@@ -1142,7 +1232,9 @@
     <option name="GHERKIN_TABLE_HEADER_CELL">
       <value>
         <option name="FOREGROUND" value="{{text}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="GHERKIN_TABLE_PIPE">
@@ -1262,7 +1354,7 @@
     <option name="HTML_TAG" baseAttributes="DEFAULT_TAG"/>
     <option name="HTML_TAG_NAME">
       <value>
-        <option name="FOREGROUND" value="{{green}}"/>
+        <option name="FOREGROUND" value="{{blue}}"/>
       </value>
     </option>
     <option name="HTTP_REQUEST_INPUT_FILE">
@@ -1293,7 +1385,9 @@
     <option name="HYPERLINK_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="{{blue}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
         <option name="EFFECT_COLOR" value="{{blue}}"/>
         <option name="EFFECT_TYPE" value="1"/>
       </value>
@@ -1399,7 +1493,9 @@
     <option name="IVAR">
       <value>
         <option name="FOREGROUND" value="{{text}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="JADE_FILE_PATH">
@@ -1410,7 +1506,9 @@
     <option name="JADE_STATEMENTS">
       <value>
         <option name="FOREGROUND" value="{{mauve}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="JADE_TAG_CLASS">
@@ -1437,7 +1535,9 @@
     <option name="JS.DECORATOR">
       <value>
         <option name="FOREGROUND" value="{{peach}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="JS.GLOBAL_FUNCTION" baseAttributes="DEFAULT_FUNCTION_DECLARATION"/>
@@ -1482,13 +1582,17 @@
     <option name="KOTLIN_DYNAMIC_FUNCTION_CALL">
       <value>
         <option name="FOREGROUND" value="{{sky}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="KOTLIN_DYNAMIC_PROPERTY_CALL">
       <value>
         <option name="FOREGROUND" value="{{maroon}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="KOTLIN_ENUM_ENTRY">
@@ -1509,7 +1613,9 @@
     <option name="KOTLIN_LABEL" baseAttributes="DEFAULT_LABEL"/>
     <option name="KOTLIN_MUTABLE_VARIABLE">
       <value>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="KOTLIN_NAMED_ARGUMENT">
@@ -1553,7 +1659,9 @@
     <option name="LESS_VARIABLE">
       <value>
         <option name="FOREGROUND" value="{{maroon}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="LINE_FULL_COVERAGE">
@@ -1709,7 +1817,9 @@
     <option name="MACRONAME">
       <value>
         <option name="FOREGROUND" value="{{sky}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="MAGIC_MEMBER_ACCESS">
@@ -1742,13 +1852,17 @@
     <option name="MARKDOWN_CODE_FENCE">
       <value>
         <option name="FOREGROUND" value="{{text}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="MARKDOWN_CODE_SPAN">
       <value>
         <option name="FOREGROUND" value="{{green}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="MARKDOWN_CODE_SPAN_MARKER">
@@ -1789,7 +1903,9 @@
     <option name="MARKDOWN_HRULE">
       <value>
         <option name="FOREGROUND" value="{{teal}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="MARKDOWN_HTML_BLOCK">
@@ -1800,7 +1916,9 @@
     <option name="MARKDOWN_ITALIC">
       <value>
         <option name="FOREGROUND" value="{{red}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="MARKDOWN_ITALIC_MARKER">
@@ -1812,26 +1930,34 @@
     <option name="MARKDOWN_LINK_DESTINATION">
       <value>
         <option name="FOREGROUND" value="{{blue}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="MARKDOWN_LINK_LABEL">
       <value>
         <option name="FOREGROUND" value="{{lavender}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="MARKDOWN_LINK_TEXT">
       <value>
         <option name="FOREGROUND" value="{{lavender}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
         <option name="EFFECT_TYPE" value="1"/>
       </value>
     </option>
     <option name="MARKDOWN_LINK_TITLE">
       <value>
         <option name="FOREGROUND" value="{{green}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="MARKDOWN_LIST_ITEM">
@@ -1951,13 +2077,17 @@
     <option name="OC.MESSAGE_ARGUMENT">
       <value>
         <option name="FOREGROUND" value="{{sky}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="OC.METHOD_DECLARATION">
       <value>
         <option name="FOREGROUND" value="{{sky}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="OC.OVERLOADED_OPERATOR">
@@ -1968,7 +2098,9 @@
     <option name="OC.PROPERTY">
       <value>
         <option name="FOREGROUND" value="{{maroon}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="OC.PROPERTY_ATTRIBUTE">
@@ -1989,13 +2121,17 @@
     <option name="OC.STRUCT_LIKE">
       <value>
         <option name="FOREGROUND" value="{{yellow}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="OC.TYPEDEF">
       <value>
         <option name="FOREGROUND" value="{{yellow}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="OC_FORMAT_TOKEN">
@@ -2009,13 +2145,17 @@
     <option name="PHP_HEREDOC_CONTENT">
       <value>
         <option name="FOREGROUND" value="{{green}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="PHP_IDENTIFIER">
       <value>
         <option name="FOREGROUND" value="{{peach}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="PHP_INSTANCE_FIELD">
@@ -2026,7 +2166,9 @@
     <option name="PHP_INTERFACE">
       <value>
         <option name="FOREGROUND" value="{{yellow}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="PHP_NAMED_ARGUMENT">
@@ -2038,7 +2180,9 @@
     <option name="PHP_THIS_VAR">
       <value>
         <option name="FOREGROUND" value="{{yellow}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="PHP_VAR" baseAttributes="DEFAULT_LOCAL_VARIABLE"/>
@@ -2156,32 +2300,42 @@
     <option name="PY.BUILTIN_NAME">
       <value>
         <option name="FOREGROUND" value="{{peach}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="PY.KEYWORD" baseAttributes="DEFAULT_KEYWORD"/>
     <option name="PY.KEYWORD_ARGUMENT">
       <value>
         <option name="FOREGROUND" value="{{maroon}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="PY.PREDEFINED_DEFINITION">
       <value>
         <option name="FOREGROUND" value="{{sapphire}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="PY.PREDEFINED_USAGE">
       <value>
         <option name="FOREGROUND" value="{{teal}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="PY.SELF_PARAMETER">
       <value>
         <option name="FOREGROUND" value="{{red}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="PY.DOC_COMMENT">
@@ -2275,19 +2429,25 @@
       <value>
         <option name="FOREGROUND" value="{{peach}}"/>
         <option name="FONT_TYPE" value="1"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="REST.EXPLICIT">
       <value>
         <option name="FOREGROUND" value="{{mauve}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="REST.FIELD">
       <value>
         <option name="FOREGROUND" value="{{mauve}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="REST.FIXED" baseAttributes="DEFAULT_IDENTIFIER"/>
@@ -2303,7 +2463,9 @@
     <option name="REST.REF.NAME">
       <value>
         <option name="FOREGROUND" value="{{green}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="RHTML_COMMENT_ID" baseAttributes="DEFAULT_LINE_COMMENT"/>
@@ -2454,7 +2616,9 @@
     </option>
     <option name="ReSharper.IL_TARGET_CODE_LABEL">
       <value>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="ReSharper.IL_VIEWER_SYNCHRONIZATION">
@@ -2478,6 +2642,9 @@
     <option name="ReSharper.XAML_CLASS">
       <value>
         <option name="FOREGROUND" value="{{blue}}" />
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2" />
+        {{/if}}
       </value>
     </option>
     <option name="ReSharper.XAML_NAMESPACE_ALIAS">
@@ -2494,13 +2661,15 @@
     <option name="SASS_MIXIN">
       <value>
         <option name="FOREGROUND" value="{{flamingo}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="SASS_VARIABLE" baseAttributes="DEFAULT_INSTANCE_FIELD"/>
     <option name="SEARCH_RESULT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="blue"/>
+        <option name="BACKGROUND" value="{{opacity blue 0.3}}"/>
       </value>
     </option>
     <option name="SLIM_BAD_CHARACTER">
@@ -2523,7 +2692,9 @@
     <option name="SLIM_FILTER">
       <value>
         <option name="FOREGROUND" value="{{teal}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="SLIM_ID">
@@ -2576,7 +2747,9 @@
     <option name="SPY-JS.PATH_LEVEL_ONE">
       <value>
         <option name="FOREGROUND" value="{{text}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
         <option name="EFFECT_TYPE" value="2"/>
       </value>
     </option>
@@ -2589,7 +2762,9 @@
     <option name="SPY-JS.PROGRAM_SCOPE">
       <value>
         <option name="BACKGROUND" value="{{base}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="SPY-JS.VALUE_HINT">
@@ -2721,21 +2896,25 @@
     <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="{{text}}"/>
-        <option name="BACKGROUND" value="blue"/>
+        <option name="BACKGROUND" value="{{opacity blue 0.3}}"/>
         <option name="ERROR_STRIPE_COLOR" value="{{blue}}"/>
       </value>
     </option>
     <option name="TODO_DEFAULT_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="{{yellow}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
         <option name="ERROR_STRIPE_COLOR" value="{{peach}}"/>
       </value>
     </option>
     <option name="TS.MODULE_NAME">
       <value>
         <option name="FOREGROUND" value="{{peach}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="TS.TYPE_GUARD">
@@ -2785,7 +2964,9 @@
     <option name="VELOCITY_KEYWORD">
       <value>
         <option name="FOREGROUND" value="{{mauve}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="VELOCITY_REFERENCE">
@@ -2828,20 +3009,22 @@
     <option name="XML_ENTITY_REFERENCE" baseAttributes="DEFAULT_ENTITY"/>
     <option name="XML_NS_PREFIX">
       <value>
-        <option name="FOREGROUND" value="{{green}}"/>
+        <option name="FOREGROUND" value="{{peach}}"/>
       </value>
     </option>
     <option name="XML_TAG" baseAttributes="DEFAULT_TAG"/>
     <option name="XML_TAG_DATA" baseAttributes="TEXT"/>
     <option name="XML_TAG_NAME">
       <value>
-        <option name="FOREGROUND" value="{{green}}"/>
+        <option name="FOREGROUND" value="{{blue}}"/>
       </value>
     </option>
     <option name="XPATH.KEYWORD">
       <value>
         <option name="FOREGROUND" value="{{mauve}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="XPATH.XPATH_NAME">
@@ -2883,7 +3066,9 @@
     </option>
     <option name="com.plan9.LABEL">
       <value>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="com.plan9.PSEUDO_INSTRUCTION">
@@ -2910,7 +3095,9 @@
     <option name="org.rust.LIFETIME">
       <value>
         <option name="FOREGROUND" value="{{blue}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="org.rust.MACRO">
@@ -2926,7 +3113,9 @@
     <option name="org.rust.TYPE_ALIAS">
       <value>
         <option name="FOREGROUND" value="{{yellow}}"/>
-        
+        {{#if italics}}
+        <option name="FONT_TYPE" value="2"/>
+        {{/if}}
       </value>
     </option>
     <option name="org.rust.TYPE_PARAMETER" baseAttributes="DEFAULT_IDENTIFIER"/>
@@ -2956,27 +3145,27 @@
     <!-- Semantic Highlights -->
     <option name="RAINBOW_COLOR0">
       <value>
-        <option name="FOREGROUND" value="red"/>
+        <option name="FOREGROUND" value="{{mix text red 0.6}}"/>
       </value>
     </option>
     <option name="RAINBOW_COLOR1">
       <value>
-        <option name="FOREGROUND" value="yellow"/>
+        <option name="FOREGROUND" value="{{mix text yellow 0.6}}"/>
       </value>
     </option>
     <option name="RAINBOW_COLOR2">
       <value>
-        <option name="FOREGROUND" value="green"/>
+        <option name="FOREGROUND" value="{{mix text green 0.6}}"/>
       </value>
     </option>
     <option name="RAINBOW_COLOR3">
       <value>
-        <option name="FOREGROUND" value="blue"/>
+        <option name="FOREGROUND" value="{{mix text blue 0.6}}"/>
       </value>
     </option>
     <option name="RAINBOW_COLOR4">
       <value>
-        <option name="FOREGROUND" value="mauve"/>
+        <option name="FOREGROUND" value="{{mix text mauve 0.6}}"/>
       </value>
     </option>
   </attributes>

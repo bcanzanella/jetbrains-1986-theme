@@ -1,0 +1,26 @@
+{
+  "name": "jetbrains-1986-theme",
+  "version": "1.0.0",
+  "description": "JetBrains 1986 theme",
+  "homepage": "https://github.com/bcanzanella/jetbrains-1986-theme#readme",
+  "bugs": {
+    "url": "https://github.com/bcanzanella/jetbrains-1986-theme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcanzanella/jetbrains-1986-theme.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "builder.js",
+  "scripts": {
+    "build": "npx tsx builder.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "handlebars": "^4.7.8",
+    "mix-colors-palette": "^1.0.1",
+    "ts-node": "^10.9.2"
+  }
+}
