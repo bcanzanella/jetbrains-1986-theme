@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="jetbrains-1986-theme:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/jetbrains_1986_theme_jar</output-path>
+    <root id="archive" name="jetbrains-1986-theme.jar">
+      <element id="module-output" name="jetbrains-1986-theme" />
+      <element id="file-copy" path="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
+      <element id="file-copy" path="$PROJECT_DIR$/resources/images/pesito.png" />
+    </root>
+  </artifact>
+</component>

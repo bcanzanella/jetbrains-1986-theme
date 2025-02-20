@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>bcanzanella.1986-theme</id>
   <name>1986 Theme</name>
-  <version>1.0.4</version>
+  <version>1.0.5</version>
   <vendor url="https://www.github.com/bcanzanella">bcanzanella</vendor>
 
   <description>Retro colors. Future coding. This is the 1986 theme.</description>

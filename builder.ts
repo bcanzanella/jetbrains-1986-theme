@@ -9,7 +9,7 @@ const rgbToHex = (r?: number, g?: number, b?: number): string => {
   return `#${[r, g, b].map((x) => x.toString(16).padStart(2, "0")).join("")}`;
 };
 
-const handlebarsIsLatte = (
+const handlebarsIsLight = (
   lightCol: string,
   darkCol: string,
   context: any
@@ -19,7 +19,9 @@ const handlebarsIsLatte = (
 
 const handlebarsOpacity = (color: string, opacity: number, context: any) => {
   const base = context.data.root.base;
+  // console.log("handlebarsOpacity", base, color, opacity, context);
   const result = mixColors([color, base], opacity);
+  // console.log("handlebarsOpacity:result", result);
   const hexResult = rgbToHex(result.r, result.g, result.b);
   return hexResult.replace(/#/, "");
 };
@@ -30,6 +32,7 @@ const handlebarsMix = (
   amount: number
 ): string => {
   const result = mixColors([color1, color2], amount);
+  // console.log("handlebarsMix:result", result);
   const hexResult = rgbToHex(result.r, result.g, result.b);
   return hexResult.replace(/#/, "");
 };
@@ -52,71 +55,85 @@ const handlebarsMixWithHex = (
   return result;
 };
 
-Handlebars.registerHelper("isLatte", handlebarsIsLatte);
+Handlebars.registerHelper("isLight", handlebarsIsLight);
 Handlebars.registerHelper("opacity", handlebarsOpacity);
 Handlebars.registerHelper("mix", handlebarsMix);
 Handlebars.registerHelper("opacityWithHex", handlebarsOpacityWithHex);
 Handlebars.registerHelper("mixWithHex", handlebarsMixWithHex);
 
+interface Metadata {
+  name: string;
+  editorScheme: string;
+  isLight: boolean;
+  italics: boolean;
+  parent_scheme: string;
+}
+
 (function () {
   try {
-    const dataColors = fs.readFileSync("./resources/theme/colors.json", "utf8");
-    const colors: { [key: string]: string } = JSON.parse(dataColors);
+    const config: {
+      metadata: Metadata;
+      themeJson: string;
+      themeTemplateXml: string;
+      resultXml: string;
+    }[] = [
+      {
+        metadata: {
+          name: "1986-theme",
+          editorScheme: "/1986.theme.xml",
+          isLight: false,
+          italics: false,
+          parent_scheme: "Darcula",
+        },
+        themeTemplateXml: "./resources/theme/templates/theme-template.xml",
+        themeJson: "./resources/theme/theme1986.theme.json",
+        resultXml: "./resources/theme/theme1986.theme.xml",
+      },
+      {
+        metadata: {
+          name: "1986-pesito-theme",
+          editorScheme: "/1986-pesito.theme.xml",
+          isLight: false,
+          italics: false,
+          parent_scheme: "Darcula",
+        },
+        themeTemplateXml: "./resources/theme/templates/theme-template.xml",
+        themeJson: "./resources/theme/theme1986-pesito.theme.json",
+        resultXml: "./resources/theme/theme1986-pesito.theme.xml",
+      },
+    ];
+    config.forEach((cfg) => {
+      const meta = cfg.metadata;
 
-    const templateJson = fs.readFileSync(
-      "./resources/theme/templates/theme-template.json",
-      "utf8"
-    );
-    const templateXml = fs.readFileSync(
-      "./resources/theme/templates/theme-template.xml",
-      "utf8"
-    );
+      let templateJson = fs.readFileSync(cfg.themeJson, "utf8");
+      const colors = JSON.parse(templateJson).colors;
+      const templateXml = fs.readFileSync(cfg.themeTemplateXml, "utf8");
 
-    const mappedColors = Object.fromEntries(
-      Object.entries(colors).map(([key, value]) => [key, value])
-    );
-    const mappedColorsNoHex = Object.fromEntries(
-      Object.entries(colors).map(([key, value]) => [
-        key,
-        value.replace(/#/g, ""),
-      ])
-    );
+      const mappedColorsNoHex = Object.fromEntries(
+        Object.entries(colors).map(([key, value]) => [
+          key,
+          (value as string).replace(/#/g, ""),
+        ])
+      );
 
-    const options = {
-      name: "1986-theme",
-      editorScheme: "/theme-1986.xml",
-      isLatte: false,
-      italics: false,
-      parent_scheme: "Darcula",
-    };
+      const outputXml = Handlebars.compile(templateXml)({
+        ...meta,
+        ...mappedColorsNoHex,
+      });
 
-    const outputJson = Handlebars.compile(templateJson)({
-      ...options,
-      ...mappedColors,
+      const missingColors = [
+        ...new Set(
+          [...outputXml.matchAll(/\{\{(.*?)\}\}/g)].map((match) => match[1])
+        ),
+      ].filter((match) => !colors.hasOwnProperty(match));
+      if (missingColors.length > 0) {
+        console.log("missing:", missingColors);
+        return;
+      }
+
+      fs.writeFileSync(cfg.resultXml, outputXml, "utf8");
     });
-    // console.log(mappedColorsNoHex);
-    const outputXml = Handlebars.compile(templateXml)({
-      ...options,
-      ...mappedColorsNoHex,
-    });
 
-    const missingColors = [
-      ...new Set(
-        [...outputXml.matchAll(/\{\{(.*?)\}\}/g)].map((match) => match[1])
-      ),
-    ].filter((match) => !colors.hasOwnProperty(match));
-    if (missingColors.length > 0) {
-      console.log("Missing colors:", missingColors);
-      return;
-    }
-
-    fs.writeFileSync(
-      "./resources/theme/jetbrains1986theme.theme.json",
-      outputJson,
-      "utf8"
-    );
-
-    fs.writeFileSync("./resources/theme/theme-1986.xml", outputXml, "utf8");
     console.log("OK!");
   } catch (err) {
     console.error(err);

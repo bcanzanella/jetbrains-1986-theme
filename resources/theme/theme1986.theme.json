@@ -1,46 +1,60 @@
 {
-  "name": "{{name}}",
+  "name": "1986",
   "dark": true,
   "author": "bcanzanella",
-  "editorScheme": "{{editorScheme}}",
+  "editorScheme": "/theme1986.theme.xml",
+
   "colors": {
-    "rosewater": "{{rosewater}}",
-    "flamingo": "{{flamingo}}",
-    "mauve": "{{mauve}}",
-    "pink": "{{pink}}",
-    "maroon": "{{maroon}}",
-    "red": "{{red}}",
-    "peach": "{{peach}}",
-    "yellow": "{{yellow}}",
-    "green": "{{green}}",
-    "teal": "{{teal}}",
-    "blue": "{{blue}}",
-    "sky": "{{sky}}",
-    "sapphire": "{{sapphire}}",
-    "lavender": "{{lavender}}",
-    "crust": "{{crust}}",
-    "mantle": "{{mantle}}",
-    "base": "{{base}}",
-    "surface0": "{{surface0}}",
-    "surface1": "{{surface1}}",
-    "surface2": "{{surface2}}",
-    "overlay0": "{{overlay0}}",
-    "overlay1": "{{overlay1}}",
-    "overlay2": "{{overlay2}}",
-    "text": "{{text}}",
-    "subtext0": "{{subtext0}}",
-    "subtext1": "{{subtext1}}",
-    "accentColor": "{{accentColor}}",
-    "secondaryAccentColor": "{{secondaryAccentColor}}",
-    "primaryForeground": "{{primaryForeground}}",
-    "primaryBackground": "{{primaryBackground}}",
-    "secondaryBackground": "{{secondaryBackground}}",
-    "panelBackground": "{{panelBackground}}",
-    "hoverBackground": "{{hoverBackground}}",
-    "selectionBackground": "{{selectionBackground}}",
-    "selectionInactiveBackground": "{{selectionInactiveBackground}}",
-    "borderColor": "{{borderColor}}",
-    "separatorColor": "{{separatorColor}}"
+    "black": "#070825",
+    "mauve": "#9E5E8A",
+    "pink": "#FF69B4",
+    "maroon": "#7A0026",
+    "red": "#FF0066",
+    "peach": "#FFA07A",
+    "orange": "#FFA07A",
+    "yellow": "#fcee54",
+    "green": "#B3F361",
+    "teal": "#46BDFF",
+    "blue": "#46BDFF",
+    "sky": "#46BDFF",
+    "sapphire": "#46BDFF",
+    "violet": "#9A4DB2",
+    "flamingo": "#ff7edb",
+    "lavender": "#DF81FC",
+    "rosewater": "#ff7edb",
+    "rose": "#ff7edb",
+    "crust": "#D9C6B0",
+    "mantle": "#556B2F",
+    "base": "#070825",
+    "surface0": "#070825",
+    "surface1": "#070825",
+    "surface2": "#161977",
+    "overlay0": "#3B4D66",
+    "overlay1": "#f1f1f1",
+    "overlay2": "#f1f1f1",
+    "text": "#f1f1f1",
+    "subtext0": "#3B4D66",
+    "subtext1": "#3B4D66",
+    "accentColor": "#FF16B0",
+    "secondaryAccentColor": "#FF16B0",
+    "primaryForeground": "#f1f1f1",
+    "primaryBackground": "#0d0f31",
+    "secondaryBackground": "#181A1F",
+    "secondaryForeground": "#cacacb",
+    "panelBackground": "#0d0f31",
+    "panelForeground": "#f1f1f1",
+    "hoverBackground": "#00a6ff",
+    "selectionBackground": "#FF16B0",
+    "selectionForeground": "#f1f1f1",
+    "selectionInactiveBackground": "#070825",
+    "borderColor": "#0d0f31",
+    "separatorColor": "#0d0f31",
+    "string": "#DF81FC",
+    "semiWarning": "#090B24",
+    "bottomSeparatorColor": "#FF16B0",
+    "headerTabHoverBackground": "#070825",
+    "headerTabSelectedInactiveBackground": "#070825",
+    "scrollbar": "#FF16B0"
   },
   "ui": {
     "*": {
@@ -52,7 +66,7 @@
       "headerBackground": "primaryBackground",
       "inactiveBackground": "primaryBackground",
       "selectionBackground": "selectionBackground",
-      "selectionForeground": "primaryForeground",
+      "selectionForeground": "selectionForeground",
       "selectionInactiveBackground": "selectionInactiveBackground",
       "selectionInactiveForeground": "primaryForeground",
       "separatorColor": "separatorColor"
@@ -64,14 +78,14 @@
       "pressedBorderColor": "selectionBackground"
     },
     "Banner": {
-      "errorBackground": "{{opacityWithHex red 0.1}}",
-      "errorBorderColor": "{{opacityWithHex red 0.15}}",
+      "errorBackground": "#FF0066",
+      "errorBorderColor": "#FF0066",
       "errorForeground": "primaryForeground",
-      "informativeBackground": "{{opacityWithHex blue 0.1}}",
-      "informativeBorderColor": "{{opacityWithHex blue 0.15}}",
+      "informativeBackground": "#46BDFF",
+      "informativeBorderColor": "#46BDFF",
       "informativeForeground": "primaryForeground",
-      "warningBackground": "{{opacityWithHex peach 0.1}}",
-      "warningBorderColor": "{{opacityWithHex peach 0.15}}",
+      "warningBackground": "#FFA07A",
+      "warningBorderColor": "#FFA07A",
       "warningForeground": "primaryForeground"
     },
     "Bookmark": {
@@ -184,22 +198,22 @@
       "inactiveUnderlineColor": "accentColor",
       "underTabsBorderColor": "primaryBackground",
       "underlineArc": 4,
-      "underlineColor": "primaryBackground",
+      "underlineColor": "secondaryAccentColor",
       "underlineHeight": 2,
       "underlinedTabBackground": "primaryBackground",
       "unselectedBlend": 0.7
     },
     "FileColor": {
-      "Blue": "{{isLatte (opacityWithHex blue 0.15) (opacityWithHex blue 0.2)}}",
-      "Green": "{{isLatte (opacityWithHex green 0.15) (opacityWithHex green 0.2)}}",
-      "Orange": "{{isLatte (opacityWithHex peach 0.15) (opacityWithHex orange 0.2)}}",
-      "Rose": "{{isLatte (opacityWithHex red 0.15) (opacityWithHex rose 0.2)}}",
-      "Violet": "{{isLatte (opacityWithHex lavender 0.15) (opacityWithHex violet 0.2)}}",
-      "Yellow": "{{isLatte (opacityWithHex lavender 0.15) (opacityWithHex black 0.2)}}"
+      "Blue": "#46BDFF",
+      "Green": "#B3F361",
+      "Orange": "#FFA07A",
+      "Rose": "#ff7edb",
+      "Violet": "#9A4DB2",
+      "Yellow": "#D9C6B0"
     },
     "Label": {
       "background": "panelBackground",
-      "selectedForeground": "selectionBackground"
+      "selectionForeground": "selectionForeground"
     },
     "Link": {
       "activeForeground": "accentColor",
@@ -216,7 +230,7 @@
       "border": "4,0,4,0",
       "hoverBackground": "hoverBackground",
       "rowHeight": "24",
-      "selectionInactiveBackground": "{{isLatte hoverBackground base}}"
+      "selectionInactiveBackground": "#070825"
     },
     "MainToolbar": {
       "Dropdown": {
@@ -236,11 +250,11 @@
       "Tab": {
         "background": "panelBackground",
         "borderColor": "panelBackground",
-        "foreground": "{{opacityWithHex primaryForeground 0.5}}",
-        "hoverBackground": "{{opacityWithHex panelBackground 0.7}}",
-        "hoverForeground": "{{opacityWithHex primaryForeground 0.5}}",
-        "selectedBackground": "primaryBackground",
-        "selectedForeground": "primaryForeground",
+        "foreground": "#f1f1f1",
+        "hoverBackground": "#0d0f31",
+        "hoverForeground": "#f1f1f1",
+        "selectedBackground": "accentColor",
+        "selectionForeground": "selectionForeground",
         "selectedInactiveBackground": "panelBackground",
         "separatorColor": "panelBackground"
       }
@@ -274,7 +288,8 @@
       }
     },
     "Panel": {
-      "background": "panelBackground"
+      "background": "panelBackground",
+      "foreground": "panelForeground"
     },
     "PasswordField": {
       "background": "secondaryBackground"
@@ -300,7 +315,7 @@
       "Tab": {
         "hoverBackground": "hoverBackground",
         "selectedBackground": "selectionBackground",
-        "selectedForeground": "primaryForeground"
+        "selectionForeground": "selectionForeground"
       },
       "borderColor": "borderColor",
       "hoverBackground": "hoverBackground",
@@ -363,12 +378,12 @@
       "Tab": {
         "background": "primaryBackground",
         "selectedBackground": "secondaryBackground",
-        "selectedForeground": "primaryForeground"
+        "selectionForeground": "selectionForeground"
       }
     },
     "SearchMatch": {
-      "endBackground": "{{isLatte (opacityWithHex mauve 0.5) mauve}}",
-      "startBackground": "{{isLatte (opacityWithHex mauve 0.5) mauve}}"
+      "endBackground": "#9E5E8A",
+      "startBackground": "#9E5E8A"
     },
     "SegmentedButton": {
       "focusedSelectedButtonColor": "secondaryBackground",
@@ -416,7 +431,7 @@
     },
     "TextField": {
       "background": "secondaryBackground",
-      "selectionBackground": "{{isLatte (opacityWithHex surface0 0.4) surface2}}"
+      "selectionBackground": "#070825"
     },
     "ToggleButton": {
       "buttonColor": "primaryForeground",
@@ -441,7 +456,7 @@
       "Button": {
         "hoverBackground": "hoverBackground",
         "selectedBackground": "hoverBackground",
-        "selectedForeground": "primaryForeground"
+        "selectionForeground": "selectionForeground"
       },
       "Header": {
         "background": "panelBackground",
@@ -449,9 +464,9 @@
         "inactiveBackground": "panelBackground"
       },
       "HeaderTab": {
-        "hoverBackground": "black",
+        "hoverBackground": "headerTabHoverBackground",
         "inactiveUnderlineColor": "text",
-        "selectedInactiveBackground": "black",
+        "selectedInactiveBackground": "headerTabSelectedInactiveBackground",
         "underlineColor": "accentColor",
         "underlineHeight": 1
       },
@@ -459,13 +474,14 @@
     },
     "Tree": {
       "background": "panelBackground",
-      "border": "4,12,4,12",
       "foreground": "primaryForeground",
       "hoverBackground": "hoverBackground",
       "modifiedItemForeground": "accentColor",
       "rowHeight": 24,
       "selectionBackground": "selectionBackground",
-      "selectionInactiveBackground": "selectionBackground"
+      "selectionInactiveBackground": "selectionBackground",
+      "selectionForeground": "selectionForeground",
+      "selectionInactiveForeground": "secondaryForeground"
     },
     "UiDesigner": {
       "Panel.background": "panelBackground",
@@ -492,7 +508,7 @@
       },
       "Log": {
         "Commit": {
-          "currentBranchBackground": "{{mixWithHex mauve mantle 0.05}}",
+          "currentBranchBackground": "#586a33",
           "hoveredBackground": "hoverBackground",
           "selectionInactiveBackground": "hoverBackground"
         }
@@ -518,37 +534,37 @@
   },
   "icons": {
     "ColorPalette": {
-      "Actions.Blue": "{{blue}}",
-      "Actions.Green": "{{green}}",
-      "Actions.Grey": "{{overlay0}}",
-      "Actions.GreyInline": "{{blue}}",
-      "Actions.GreyInline.Dark": "{{blue}}",
-      "Actions.Red": "{{red}}",
-      "Actions.Yellow": "{{yellow}}",
-      "Objects.BlackText": "{{surface0}}",
-      "Objects.Blue": "{{blue}}",
-      "Objects.Green": "{{green}}",
-      "Objects.Grey": "{{overlay0}}",
-      "Objects.Pink": "{{pink}}",
-      "Objects.Purple": "{{mauve}}",
-      "Objects.Red": "{{red}}",
-      "Objects.RedStatus": "{{red}}",
-      "Objects.Yellow": "{{yellow}}",
-      "Objects.YellowDark": "{{flamingo}}",
-      "Checkbox.Background.Default": "{{surface0}}",
-      "Checkbox.Background.Default.Dark": "{{surface0}}",
-      "Checkbox.Background.Disabled": "{{surface0}}",
-      "Checkbox.Background.Disabled.Dark": "{{surface0}}",
-      "Checkbox.Background.Selected": "{{overlay0}}",
-      "Checkbox.Background.Selected.Dark": "{{surface1}}",
-      "Checkbox.Border.Default": "{{surface0}}",
-      "Checkbox.Border.Disabled": "{{surface0}}",
-      "Checkbox.Border.Selected": "{{surface0}}",
-      "Checkbox.Foreground.Disabled": "{{overlay0}}",
-      "Checkbox.Foreground.Disabled.Dark": "{{overlay0}}",
-      "Checkbox.Foreground.Selected": "{{accentColor}}",
-      "Checkbox.Foreground.Selected.Dark": "{{accentColor}}",
-      "Tree.iconColor": "{{text}}"
+      "Actions.Blue": "#46BDFF",
+      "Actions.Green": "#B3F361",
+      "Actions.Grey": "#3B4D66",
+      "Actions.GreyInline": "#46BDFF",
+      "Actions.GreyInline.Dark": "#46BDFF",
+      "Actions.Red": "#FF0066",
+      "Actions.Yellow": "#fcee54",
+      "Objects.BlackText": "#070825",
+      "Objects.Blue": "#46BDFF",
+      "Objects.Green": "#B3F361",
+      "Objects.Grey": "#3B4D66",
+      "Objects.Pink": "#FF69B4",
+      "Objects.Purple": "#9E5E8A",
+      "Objects.Red": "#FF0066",
+      "Objects.RedStatus": "#FF0066",
+      "Objects.Yellow": "#fcee54",
+      "Objects.YellowDark": "#ff7edb",
+      "Checkbox.Background.Default": "#070825",
+      "Checkbox.Background.Default.Dark": "#070825",
+      "Checkbox.Background.Disabled": "#070825",
+      "Checkbox.Background.Disabled.Dark": "#070825",
+      "Checkbox.Background.Selected": "#3B4D66",
+      "Checkbox.Background.Selected.Dark": "#070825",
+      "Checkbox.Border.Default": "#070825",
+      "Checkbox.Border.Disabled": "#070825",
+      "Checkbox.Border.Selected": "#070825",
+      "Checkbox.Foreground.Disabled": "#3B4D66",
+      "Checkbox.Foreground.Disabled.Dark": "#3B4D66",
+      "Checkbox.Foreground.Selected": "#FF16B0",
+      "Checkbox.Foreground.Selected.Dark": "#FF16B0",
+      "Tree.iconColor": "#f1f1f1"
     }
   }
 }
