@@ -8,7 +8,7 @@
     <option name="BLOCK_TERMINAL_DEFAULT_FOREGROUND" value="cacacb" />
     <option name="BLOCK_TERMINAL_ERROR_BLOCK_STROKE_COLOR" value="8f576c" />
     <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_BACKGROUND" value="78cae0" />
-    <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_STROKE_COLOR" value="3B4D66" />
+    <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_STROKE_COLOR" value="565d68" />
     <option name="BLOCK_TERMINAL_PROMPT_SEPARATOR_COLOR" value="78cae0" />
     <option name="BLOCK_TERMINAL_SELECTED_BLOCK_BACKGROUND" value="9A4DB2" />
     <option name="BLOCK_TERMINAL_SELECTED_BLOCK_STROKE_COLOR" value="95e7ef" />
@@ -18,7 +18,7 @@
 <!--    <option name="CARET_DISABLED_COLOR" value="161977" />-->
     <option name="CONSOLE_BACKGROUND_KEY" value="2d2f2f"/>
     <option name="DELETED_LINES_COLOR" value="A51844"/>
-    <option name="DIFF_SEPARATORS_BACKGROUND" value="3B4D66"/>
+    <option name="DIFF_SEPARATORS_BACKGROUND" value="565d68"/>
     <option name="DOCUMENTATION_COLOR" value="556B2F"/>
     <option name="DOC_COMMENT_LINK" value="95e7ef"/>
     <option name="ERROR_HINT" value="781732"/> <!-- Can't figure out how to edit foreground colour so stock red honestly looks better for all dark flavours -->
@@ -27,17 +27,17 @@
     <option name="FILESTATUS_DELETED" value="161977"/>
     <option name="FILESTATUS_HIJACKED" value="fcee54"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="161977"/>
-    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="3B4D66"/>
+    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="565d68"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="FFA07A"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="FFA07A"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="FFA07A"/>
     <option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value="d5f2d0"/>
-    <option name="FILESTATUS_IGNORE.PROJECT_VIEW.IGNORED" value="3B4D66"/>
+    <option name="FILESTATUS_IGNORE.PROJECT_VIEW.IGNORED" value="565d68"/>
     <option name="FILESTATUS_MERGED" value="e3d0e7"/>
     <option name="FILESTATUS_MODIFIED" value="95e7ef"/>
     <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="95e7ef"/>
     <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="95e7ef"/>
-    <option name="FILESTATUS_SUPPRESSED" value="3B4D66"/>
+    <option name="FILESTATUS_SUPPRESSED" value="565d68"/>
     <option name="FILESTATUS_SWITCHED" value="9A4DB2"/>
     <option name="FILESTATUS_UNKNOWN" value="ea9472"/>
     <option name="FILESTATUS_addedOutside" value="d5f2d0"/>
@@ -56,7 +56,7 @@
     <option name="INLINE_REFACTORING_SETTINGS_DEFAULT" value="5d93a2"/>
     <option name="INLINE_REFACTORING_SETTINGS_FOCUSED" value="202256"/>
     <option name="INLINE_REFACTORING_SETTINGS_HOVERED" value="202256"/>
-    <option name="LINE_NUMBERS_COLOR" value="3B4D66"/>
+    <option name="LINE_NUMBERS_COLOR" value="565d68"/>
     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="f1f1f1"/>
     <option name="LOOKUP_COLOR" value="9A4DB2"/>
     <option name="METHOD_SEPARATORS_COLOR" value="9A4DB2"/>
@@ -761,7 +761,7 @@
     </option>
     <option name="DEFAULT_BLOCK_COMMENT">
       <value>
-        <option name="FOREGROUND" value="3B4D66"/>
+        <option name="FOREGROUND" value="565d68"/>
       </value>
     </option>
     <option name="DEFAULT_BRACES">
@@ -796,7 +796,7 @@
     </option>
     <option name="DEFAULT_DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="3B4D66"/>
+        <option name="FOREGROUND" value="565d68"/>
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT_TAG">
@@ -873,7 +873,7 @@
     </option>
     <option name="DEFAULT_LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="3B4D66"/>
+        <option name="FOREGROUND" value="565d68"/>
       </value>
     </option>
     <option name="DEFAULT_LOCAL_VARIABLE">
@@ -1059,7 +1059,7 @@
     </option>
     <option name="FOLDED_TEXT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="3B4D66"/>
+        <option name="FOREGROUND" value="565d68"/>
         <option name="BACKGROUND" value="9A4DB2"/>
         <option name="EFFECT_TYPE" value="2"/>
       </value>
@@ -1816,7 +1816,7 @@
     <option name="MATCHED_BRACE_ATTRIBUTES">
       <value>
         <option name="FONT_TYPE" value="1"/>
-        <option name="EFFECT_COLOR" value="3B4D66"/>
+        <option name="EFFECT_COLOR" value="565d68"/>
       </value>
     </option>
     <option name="MATCHED_TAG_NAME" baseAttributes="MATCHED_BRACE_ATTRIBUTES"/>

@@ -32,7 +32,7 @@
     "surface0": "#9A4DB2",
     "surface1": "#78cae0",
     "surface2": "#161977",
-    "overlay0": "#3B4D66",
+    "overlay0": "#565d68",
     "overlay1": "#f1f1f1",
     "overlay2": "#d7d5e7",
     "text": "#cacacb",
@@ -212,7 +212,7 @@
       "Orange": "#FFA07A",
       "Rose": "#ff7edb",
       "Violet": "#d7b2d7",
-      "Yellow": "#D9C6B0"
+      "Yellow": "#2e3132"
     },
     "Label": {
       "background": "panelBackground",
@@ -556,17 +556,17 @@
       "Objects.YellowDark": "#ff7edb",
       "Checkbox.Background.Default": "#9A4DB2",
       "Checkbox.Background.Default.Dark": "#9A4DB2",
-      "Checkbox.Background.Disabled": "#9A4DB2",
-      "Checkbox.Background.Disabled.Dark": "#9A4DB2",
-      "Checkbox.Background.Selected": "#353837",
-      "Checkbox.Background.Selected.Dark": "#78cae0",
+      "Checkbox.Background.Disabled": "#353837",
+      "Checkbox.Background.Disabled.Dark": "#353837",
+      "Checkbox.Background.Selected": "#556B2F",
+      "Checkbox.Background.Selected.Dark": "#556B2F",
       "Checkbox.Border.Default": "#9A4DB2",
       "Checkbox.Border.Disabled": "#9A4DB2",
       "Checkbox.Border.Selected": "#9A4DB2",
       "Checkbox.Foreground.Disabled": "#353837",
       "Checkbox.Foreground.Disabled.Dark": "#353837",
-      "Checkbox.Foreground.Selected": "#88dfec",
-      "Checkbox.Foreground.Selected.Dark": "#88dfec",
+      "Checkbox.Foreground.Selected": "#ff7edb",
+      "Checkbox.Foreground.Selected.Dark": "#ff7edb",
       "Tree.iconColor": "#dfdfdf"
     }
   }
